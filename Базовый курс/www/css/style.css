@@ -8,6 +8,12 @@ body {
     text-align: center;
 }
 
+.wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 .nav-link {
     color: #444444;
 }
@@ -23,26 +29,50 @@ body {
 }
 
 .title p {
+    font-family: 'Raleway', sans-serif;
     color: #30a3f0;
     font-size: 18px;
 }
 
 .title h1 {
-    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    max-width: 720px;
     font-size: 45px;
+    margin: 0 auto;
+}
 
+.element {
+    width: 1px;
+    height: 100px;
+    background-color: #2a88c8;
+    margin: 0 auto;
+}
+
+.element-top {
+    margin-bottom: 30px;
+}
+
+.element-bottom {
+    margin-top: 32px;
 }
 
 .btn {
     font-size: 14px;
+    font-weight: 700;
     color: #30a3f0;
     text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #30a3f0;
+    border-radius: 5px;
+    padding: 20px 42px;
 }
 
 .box h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 20px;
+    margin-bottom: 27px;
 }
 
 .title-h2 {
