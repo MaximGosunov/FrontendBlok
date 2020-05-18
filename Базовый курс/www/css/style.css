@@ -16,6 +16,7 @@ body {
 
 .header {
     padding-bottom: 214px;
+    background-image: url(../img/bg.png);
 }
 
 .title {
@@ -24,12 +25,16 @@ body {
 
 .info-item, 
 .info-link {
-    /*color: rgba(255, 255, 255, 0.3);*/
+    color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
 }
 
 .info-link {
     text-decoration: none;
+}
+
+.info-link:hover{
+    color: #30a3f0;
 }
 
 .info-left .info-item {
@@ -81,8 +86,8 @@ body {
 }
 
 .nav-link:hover {
-    border: 1px solid #30a3f0;
-    border-radius: 5px;    
+    color: #30a3f0;
+    border: 1px solid transparent
 }
 
 .nav-top {
@@ -102,6 +107,8 @@ body {
     font-weight: 800;
     max-width: 720px;
     font-size: 45px;
+    color: #fff;
+    line-height: 60px;
     margin: 0 auto;
 }
 
@@ -129,6 +136,11 @@ body {
     border: 1px solid #30a3f0;
     border-radius: 5px;
     padding: 20px 42px;
+}
+
+.btn:hover {
+    background-color: #30a3f0;
+    color : #fff;
 }
 
 .page-line {
@@ -161,11 +173,26 @@ body {
 .title-h2 {
     font-size: 30px;
     font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 .title-h2 span {
+    text-transform: initial;
     font-size: 16px;
     color: #30a3f0;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.line {
+    display: block;
+    width: 53px;
+    height: 16px;
+    background-image: url(../img/line.svg);
+    background-repeat: no-repeat;
 }
 
 .description {
