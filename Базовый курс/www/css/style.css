@@ -33,6 +33,11 @@ body {
     text-decoration: none;
 }
 
+.info-link svg {
+    color: #30a3f0;
+    margin-right: 11px;
+}
+
 .info-link:hover{
     color: #30a3f0;
 }
@@ -42,7 +47,7 @@ body {
 }
 
 .info-right .info-item {
-    margin-left: 17px;
+    margin-left: 6px;
 }
 
 .info {
@@ -61,6 +66,10 @@ body {
     margin-bottom: 220px;
 }
 
+.logo {
+    width: 158px;
+}
+
 .nav {
     list-style-type: none;
     padding-left: 0;
@@ -69,6 +78,10 @@ body {
 
 .nav-item {
     margin-left: 8px;
+}
+
+.nav-item-btn {
+    margin-left: 21px;
 }
   
 .nav-link {
@@ -94,6 +107,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.nav-btn svg{
+    color: #444444;
+}
+
+.register::before {
+    content: '/';
+    margin-right: 6px;
 }
 
 .title p {
