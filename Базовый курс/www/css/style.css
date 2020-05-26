@@ -388,3 +388,24 @@ body {
 .photo-item:hover .photo-text {
     display: block;
 }
+
+.photo-btn {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.photo-btn-item {
+    
+    background-color: #fff;
+    color: #222222;
+    width: 60px;
+    height: 60px;
+    padding: 22px 22px 22px 22px;
+}
+
+.photo-btn-item:hover {
+    color: #fff;
+    background-color: #30a3f0;
+}
