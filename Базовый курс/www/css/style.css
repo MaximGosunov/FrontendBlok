@@ -245,7 +245,8 @@ body {
 }
 
 .page-gray .description,
-.page-team .description {
+.page-team .description,
+.page-blog .description {
     max-width: 690px;
     margin: 0 auto;
 }
@@ -593,4 +594,14 @@ body {
     display: block;
     font-size: 16px;
     margin-bottom: 24px;
+}
+
+.blog {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.blog-item {
+    background-color: #fafafa;
 }
