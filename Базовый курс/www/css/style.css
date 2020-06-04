@@ -605,3 +605,36 @@ body {
 .blog-item {
     background-color: #fafafa;
 }
+
+.blog-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-blog h3 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.text-blog ul {
+    text-transform: uppercase;
+    padding-left: 0;
+    list-style-type: none;
+    color: #444444; 
+}
+
+.text-blog ul a {
+    color: #444444;
+    text-decoration: none;
+}
+
+.text-blog ul > li {
+    padding-right: 17px;
+    margin-right: 19px;
+}
+
+.text-blog p{
+    line-height; 26px: 
+}
