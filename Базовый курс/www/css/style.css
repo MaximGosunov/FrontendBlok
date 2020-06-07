@@ -101,7 +101,7 @@ body {
 
 .nav-link:hover {
     color: #30a3f0;
-    border: 1px solid transparent
+    border: 1px solid transparent;
 }
 
 .nav-top {
@@ -599,23 +599,76 @@ body {
 .blog {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
-    grid-gap: 15px;
-}
-
-.blog-item {
-    background-color: #fafafa;
+    grid-gap: 30px;
+    margin-top: 60px;
 }
 
 .blog-flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+    height: 100%;
+}
+
+.blog-eye {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 60px;
+    display: none;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: calc(50% - 30px);
+}
+
+.thumb-blog {
+    position: relative;
+    width: 285px;
+    flex-basis: 285px;
+    overflow: hidden;
+}
+
+.thumb-blog img {
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thumb-blog:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.thumb-blog:hover .blog-eye {
+    display: block;
+}
+
+.thumb-blog::after {
+    content: '';
+    background-image: url(../img/shape.png);
+    width: 21px;
+    height: 42px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 39px;
+}
+
+.text-blog {
+    padding: 45px 37px 50px;
+    background-color: #fafafa;
+    flex-basis: calc(100% - 285px);    
 }
 
 .text-blog h3 {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    margin-top: 0;
 }
 
 .text-blog ul {
@@ -623,18 +676,157 @@ body {
     padding-left: 0;
     list-style-type: none;
     color: #444444; 
-}
-
-.text-blog ul a {
-    color: #444444;
-    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 27px;
+    font-size: 12px;
 }
 
 .text-blog ul > li {
     padding-right: 17px;
     margin-right: 19px;
+    border-right: 1px solid #707070;
 }
 
-.text-blog p{
-    line-height; 26px: 
+.text-blog ul > li:last-child {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.text-blog ul > li > a {
+    color: #444444;
+    text-decoration: none;
+}
+
+.text-blog p {
+    color: #444444;
+    line-height: 26px; 
+}
+
+.text-blog a {
+    text-decoration: none;
+    color: #30a3f0;
+}
+
+.text-blog a span {
+    margin-right: 10px;
+}
+
+.blog-share {
+    position: absolute;
+    width: 100%;
+    bottom: 23px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.blog-share span {
+    padding-left: 6px;
+}
+
+.blog-share a {
+    text-decoration: none;
+}
+
+.comments {
+    color: #fff;
+    background-color: #30a3f0;
+    border-style: none;
+    border-radius: 5px;
+    padding: 8px 13px;
+}
+
+.comments a {
+    color: #fff;
+}
+
+.like {
+    color: #707070;
+    background-color: #fff;
+    border: none;
+    border-style: none;
+    border-radius: 5px;
+    padding: 8px 13px;
+    margin-left: 10px;
+}  
+
+.like a {
+    color: #707070;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-item {
+    display: block;
+    background-image: url(../img/company.png);
+    background-repeat: no-repeat;
+    height: 93px;
+}
+
+.company-one {
+    width: 118px;
+    flex-basis: 118px;
+}
+
+.footer {
+    background-color: #151515;
+}
+
+.btn-footer {
+    background-color: #1a1a1a;
+    color: #707070;
+    font-size: 26px;
+    display: block;
+    width: 47px;
+    height: 34px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-footer:focus {
+    outline: none;
+}
+
+.footer-bg {
+    background-color: #1a1a1a;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-list > li {
+    padding-left: 24px;
+    margin-left: 22px;
+    border-left: 1px solid #414141;
+}
+
+.footer-list > li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+    border-left: none;
+}
+
+.footer-list > li > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
 }
