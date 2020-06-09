@@ -182,6 +182,12 @@ body {
     padding-top: 100px;
 }
 
+.page-company {
+    background-color: #fdfdfd;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .box {
     display: flex;
     border-left: 1px solid #e4e4e4;
@@ -772,6 +778,37 @@ body {
 .company-one {
     width: 118px;
     flex-basis: 118px;
+    background-position: -17px center;
+}
+
+.company-two {
+    width: 126px;
+    flex-basis: 126px;
+    background-position: -213px center;
+}
+
+.company-three {
+    width: 99px;
+    flex-basis: 99px;
+    background-position: -427px center;
+}
+
+.company-four {
+    width: 121px;
+    flex-basis: 121px;
+    background-position: -617px center;
+}
+
+.company-five {
+    width: 92px;
+    flex-basis: 92px;
+    background-position: -831px center;
+}
+
+.company-six {
+    width: 126px;
+    flex-basis: 126px;
+    background-position: -1014px center;
 }
 
 .footer {
